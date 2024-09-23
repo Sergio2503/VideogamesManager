@@ -2,12 +2,12 @@ package org.sergio;
 
 import java.util.Objects;
 
-public class Videojuego {
+public abstract class Videojuego {
 
-    private final String Nombre;
-    private final String Plataforma;
-    private final String Genero;
-    private final Double Precio;
+    protected final String Nombre;
+    protected final String Plataforma;
+    protected final String Genero;
+    protected final Double Precio;
 
     public Videojuego(String Nombre, String Plataforma, String Genero, Double Precio) {
         this.Nombre = Nombre;
@@ -27,5 +27,11 @@ public class Videojuego {
     @Override
     public int hashCode() {
         return Objects.hash(Nombre, Plataforma, Genero, Precio);
+    }
+
+
+    @Override
+    public String toString() {
+        return Nombre + Plataforma + Genero + Precio;
     }
 }

@@ -1,5 +1,10 @@
 package org.sergio;
 
-public abstract class VideojuegoDigital {
+public class VideojuegoDigital extends Videojuego {
 
+    public VideojuegoDigital(String Nombre, String Plataforma, String Genero, Double Precio) {
+        super(Nombre, Plataforma, Genero, Precio);
+    }
+
+    public double precioDigital = Precio;
 }
