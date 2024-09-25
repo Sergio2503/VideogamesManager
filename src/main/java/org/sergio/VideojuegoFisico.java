@@ -2,7 +2,7 @@ package org.sergio;
 
 public class VideojuegoFisico extends Videojuego {
 
-    private double CosteEnvio = 5.0;
+    private double CosteEnvio = 5.00;
 
     public VideojuegoFisico(String Nombre, String Plataforma, String Genero, Double Precio) {
         super(Nombre, Plataforma, Genero, Precio);
