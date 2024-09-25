@@ -6,5 +6,5 @@ public class VideojuegoDigital extends Videojuego {
         super(Nombre, Plataforma, Genero, Precio);
     }
 
-    public double precioDigital = Precio;
+    public double PrecioDigital = Precio;
 }

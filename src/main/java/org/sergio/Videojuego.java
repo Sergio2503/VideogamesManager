@@ -16,6 +16,22 @@ public abstract class Videojuego {
         this.Precio = Precio;
     }
 
+    public String getNombre() {
+        return Nombre;
+    }
+
+    public Double getPrecio() {
+        return Precio;
+    }
+
+    public String getGenero() {
+        return Genero;
+    }
+
+    public String getPlataforma() {
+        return Plataforma;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -32,6 +48,6 @@ public abstract class Videojuego {
 
     @Override
     public String toString() {
-        return Nombre + Plataforma + Genero + Precio;
+        return "Videojuego:" + Nombre + Plataforma + Genero + Precio;
     }
 }

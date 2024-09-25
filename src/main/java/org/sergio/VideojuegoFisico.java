@@ -9,10 +9,6 @@ public class VideojuegoFisico extends Videojuego {
         this.CosteEnvio = CosteEnvio;
     }
 
-    public double getCosteEnvio() {
-        return CosteEnvio;
-    }
-
     public double PrecioFinal() {
         return Precio + CosteEnvio;
     }
