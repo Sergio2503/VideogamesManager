@@ -5,5 +5,5 @@ public interface IConsola {
     void switchOff();
     void installGame();
     void playGame();
-    void getPlataforma();
+    String getPlataforma();
 }
