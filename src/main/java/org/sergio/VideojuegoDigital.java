@@ -9,4 +9,22 @@ public class VideojuegoDigital extends Videojuego {
     }
 
     public double PrecioFinal = Precio;
+
+    public VideojuegoDigital(String[] gameArray) {
+        super(gameArray);
+    }
+
+    @Override
+    public void calcularPrecio() {
+        System.out.println(Precio);
+    }
+
+    @Override
+    public String toString() {
+        return Nombre +
+                " " + Plataforma +
+                " " + Precio +
+                " " + Genero +
+                " " + Precio + "\n";
+    }
 }

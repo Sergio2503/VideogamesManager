@@ -1,8 +1,10 @@
 package org.sergio;
 
+import org.sergio.IVideojuego;
+
 import java.util.Objects;
 
-public abstract class Videojuego implements IConsola {
+public abstract class Videojuego implements IVideojuego {
 
     protected final String Nombre;
     protected final String Plataforma;
@@ -19,6 +21,14 @@ public abstract class Videojuego implements IConsola {
         this.Precio = Precio;
         this.type = type;
 
+    }
+
+    public Videojuego(String[] gameArray) {
+        this.Nombre = gameArray[0];
+        this.Plataforma = gameArray[1];
+        this.Genero = gameArray[2];
+        this.Precio = Double.parseDouble(gameArray[3]);
+        this.type = Type.valueOf(gameArray[4]);
     }
 
     public String getNombre() {
@@ -40,6 +50,7 @@ public abstract class Videojuego implements IConsola {
     public Type getType() {
         return type;
     }
+
 
     @Override
     public boolean equals(Object o) {

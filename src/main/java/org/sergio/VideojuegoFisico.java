@@ -11,6 +11,10 @@ public class VideojuegoFisico extends Videojuego {
         this.costeEnvio = costeEnvio;
     }
 
+    public VideojuegoFisico(String[] gameArray) {
+        super(gameArray);
+    }
+
     @Override
     public void calcularPrecio() {
         System.out.println(super.Precio + this.costeEnvio);
@@ -19,9 +23,9 @@ public class VideojuegoFisico extends Videojuego {
     @Override
     public String toString() {
         return Nombre +
-                "#" + Plataforma +
-                "#" + Precio +
-                "#" + Genero +
-                "#" + Precio + "\n";
+                " " + Plataforma +
+                " " + Precio +
+                " " + Genero +
+                " " + Precio + "\n";
     }
 }
